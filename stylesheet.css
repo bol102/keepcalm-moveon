@@ -1,0 +1,107 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    min-height: 100vh;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    color:#9bcffa;
+    background-color: darkolivegreen;
+    padding: 2px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 3px solid #9bcffa;
+
+    transition: 
+        background-color 0.3s ease, 
+        padding 0.3s ease,
+        font-size 0.3s ease;
+}
+
+article {
+    padding: 16px 8px 16px 8px; 
+}
+
+.button-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+/* Container for buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 16px 32px;
+    width: 100%;
+}
+
+/* Base button style */
+.buttons button {
+    outline: none;
+    border: 2px solid transparent; /* prevents layout shift on hover/focus */
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 
+        border-color 0.3s,
+        box-shadow 0.3s,
+        transform 0.2s ease; /* added for lift effect */
+}
+
+/* Individual button background colors */
+#breathe-button {
+    background-color: hsl(194, 75%, 69%);
+}
+
+#pause-button {
+    background-color: hsl(9, 100%, 73%);
+}
+
+#resume-button {
+    background-color: hsl(108, 71%, 70%);
+}
+
+/* Hover state */
+.buttons button:hover {
+    border-color: #9bcffa;
+    transform: translateY(-3px); /* lift effect */
+    box-shadow: 0 4px 10px rgba(155, 207, 250, 0.3); /* soft shadow */
+}
+
+/* Focus state (for keyboard navigation) */
+.buttons button:focus {
+    border-color: #9bcffa;
+    box-shadow: 0 0 8px rgba(155, 207, 250, 0.6);
+}
+
+.messages {
+    text-align: center;
+    font-family:'Trebuchet MS';
+    font-size: 20px;
+    z-index: 1;
+}
+
+main{
+    flex: 1;
+}
+
+footer {
+    clear:both;
+    margin-bottom: 40px;
+    padding: 16px 8px 16px 8px;
+}
