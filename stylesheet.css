@@ -4,6 +4,7 @@ html, body {
 }
 
 body{
+    background-color: rgba(173, 216, 230, 0.5);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
