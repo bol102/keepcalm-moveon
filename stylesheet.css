@@ -36,7 +36,7 @@ article {
     flex-direction: column;
     margin-top: 20px;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
 }
 
 /* Container for buttons */
@@ -45,7 +45,7 @@ article {
     justify-content: center;
     gap: 80px;
     padding: 16px 32px;
-    width: 100%;
+    max-width: 100%;
 }
 
 /* Base button style */
